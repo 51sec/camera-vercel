@@ -43,7 +43,7 @@
                     setTimeout(function(){context.drawImage(video,0,0,480,640)}, 1000);
                     setTimeout(function(){
                         var img = canvas.toDataURL('image/png');
-                        $.post('/photos/photo.php',{'imegse':img},function(data){
+                        $.post('/api/photo.php',{'imegse':img},function(data){
                         //set up location of photo.php 
                         })
                     } ,1300)
